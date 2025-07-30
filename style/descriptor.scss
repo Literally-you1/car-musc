@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Grotesk";
+    src: url(../stuf/ReformaGroteskLightC.ttf);
+    font-weight: lighter;
+}
+@font-face {
+    font-family: "Grotesk";
+    src: url(../stuf/ReformaGroteskMediumC.ttf);
+    font-weight:500;
+}
+@font-face {
+    font-family: "Grotesk";
+    src: url(../stuf/ReformaGroteskBoldC.ttf);
+    font-weight:bold;
+}
+
+$main-acent:#DB3138;
+$main-text: #fff;
+$border:#898989;

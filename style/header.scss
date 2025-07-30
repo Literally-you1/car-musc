@@ -1,0 +1,13 @@
+.head{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    padding:40px ;
+    display: flex;
+    justify-content: space-between;
+    &__nav-list{
+        display: flex;
+        justify-content: space-between ;
+        width: 521px;
+    }
+}

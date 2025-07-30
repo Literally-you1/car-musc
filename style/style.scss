@@ -1,0 +1,14 @@
+@use "./descriptor.scss" as *;
+
+@import "./rset.scss",
+"./header.scss"
+;
+
+body{
+    font-family: "Grotesk";
+    font-weight:bold;
+}
+.vraper{
+    width: 100%;
+    position: relative;
+}
