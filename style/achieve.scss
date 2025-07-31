@@ -1,0 +1,90 @@
+@use "./variable.scss" as *;
+
+.achieve{
+    margin: 0 auto;
+    margin-top: 109px;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 28px;
+    &__big-txt{
+    color: $main-text;
+    font-size: 4rem;
+    margin-bottom: 40px;
+}
+&__romb--vrap{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+&__romb{
+   width: 10px;
+   height: 10px;
+   background-color: $main-acent;
+   transform: rotateZ(45deg);
+   margin-bottom: 60px;
+}
+&__text{
+     color: $main-text;
+     font-weight: 500;
+     font-size: 1.8rem;
+     text-wrap: balance;
+}
+&__second{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6,198px);
+}
+&__cell{
+    width:300px ;
+    height: 177px;
+border: $border 1px solid;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px;
+&:nth-of-type(2){
+    border-left: none;
+    height: 177px;
+grid-column: 2;
+grid-row: 1/3;
+align-self: center;
+}
+&:nth-of-type(4){
+    border-left: none;
+    height: 177px;
+grid-column: 2;
+grid-row: 2/4;
+align-self: center;
+}
+&:nth-of-type(6){
+    border-left: none;
+    height: 177px;
+grid-column: 2;
+grid-row: 3/5;
+align-self: center;
+}
+
+&:nth-of-type(8){
+    height: 177px;
+grid-column: 2;
+grid-row: 4/6;
+align-self: center;
+}
+}
+&__trophy{
+    color: $main-acent;
+    font-size: 4rem;
+    span{
+      font-size: 1.5rem;
+    }
+}
+&__descript{
+    margin-top: 10px;
+    color: $main-text;
+    text-align: center;
+}
+}
