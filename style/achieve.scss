@@ -35,7 +35,7 @@
     width: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6,198px);
+    grid-template-rows: repeat(5,198px);
 }
 &__cell{
     width:300px ;
@@ -73,6 +73,21 @@ align-self: center;
 grid-column: 2;
 grid-row: 4/6;
 align-self: center;
+border-left: none;
+position: relative;
+}
+&:nth-of-type(2n){
+    margin-bottom: 100px;
+}
+&:last-of-type::after{
+content: '';
+display: block;
+position: absolute;
+background-color: $border;
+width: 1px;
+height: 48px;
+top: 76%;
+right: 100%;
 }
 }
 &__trophy{
@@ -86,5 +101,58 @@ align-self: center;
     margin-top: 10px;
     color: $main-text;
     text-align: center;
+}
+
+}
+
+
+@media only screen and (max-width:1500px) {
+    .achieve{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        &__second{
+            justify-content: center;
+        }
+        &__romb--vrap{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+@media only screen and (max-width:850px) {
+.achieve{
+    &__second{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10,198px);
+}
+&__cell{
+    &:nth-of-type(2){
+        grid-row: 2;
+  border-left: 1px $border solid;
+grid-column: 1;
+}
+&:nth-of-type(4){
+    grid-row: 4;
+    border-left: 1px $border solid;
+grid-column: 1;
+}
+&:nth-of-type(6){
+    grid-row: 6;
+border-left: 1px $border solid;
+grid-column: 1;
+}
+
+&:nth-of-type(8){
+    grid-row: 8;
+grid-column: 1;
+border-left: 1px $border solid;
+}
+&:nth-of-type(2n){
+    margin-bottom: 0px;
+}
+}
 }
 }
