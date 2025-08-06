@@ -1,0 +1,16 @@
+@use "./variable.scss" as *;
+.slider__arrow-box{
+    width: 40px;
+    height: 40px;
+    border: 1px solid $main-acent;
+    transform: rotateZ(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__arrow{
+    color: $main-text;
+    transform: rotateZ(-45deg);
+    font-size: 2rem;
+}

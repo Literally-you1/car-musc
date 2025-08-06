@@ -126,7 +126,7 @@ right: 100%;
     width: 50%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(10,198px);
+    grid-template-rows: repeat(8,198px);
 }
 &__cell{
     &:nth-of-type(2){
@@ -153,6 +153,21 @@ border-left: 1px $border solid;
 &:nth-of-type(2n){
     margin-bottom: 0px;
 }
+}
+}
+}
+@media only screen and (max-width:605px) {
+
+.achieve{
+    grid-template-columns: 100%;
+        &__big-txt{
+    font-size: 3rem;
+}
+&__text{
+    font-size: 1rem;
+    font-weight: bold;
+    width: 320px;
+        text-wrap: balance;
 }
 }
 }

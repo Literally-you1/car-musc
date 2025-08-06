@@ -211,9 +211,28 @@ button {
   color: #fff;
 }
 
+.hide {
+  display: none;
+}
+
 @media only screen and (max-width: 850px) {
-  .head__burger {
+  .head__nav-list {
     display: none;
+  }
+  .hide {
+    display: block;
+  }
+  .head {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+  }
+  .head__link {
+    font-size: 1.8rem;
   }
 }
 @font-face {
@@ -355,6 +374,26 @@ button {
 @media only screen and (max-width: 1500px) {
   .info-bar__text {
     width: 200px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .contents {
+    margin-top: 60px;
+  }
+  .contents__main-text {
+    font-size: 6rem;
+  }
+  .contents__text {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .info-bar__text {
+    width: 100px;
+    font-size: 0.9rem;
+  }
+  .info-bar__text-vrap {
+    font-size: 0.9rem;
   }
 }
 .achieve {
@@ -568,8 +607,8 @@ button {
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    -ms-grid-rows: (198px)[10];
-    grid-template-rows: repeat(10, 198px);
+    -ms-grid-rows: (198px)[8];
+    grid-template-rows: repeat(8, 198px);
   }
   .achieve__second > *:nth-child(1) {
     -ms-grid-row: 1;
@@ -601,14 +640,6 @@ button {
   }
   .achieve__second > *:nth-child(8) {
     -ms-grid-row: 8;
-    -ms-grid-column: 1;
-  }
-  .achieve__second > *:nth-child(9) {
-    -ms-grid-row: 9;
-    -ms-grid-column: 1;
-  }
-  .achieve__second > *:nth-child(10) {
-    -ms-grid-row: 10;
     -ms-grid-column: 1;
   }
   .achieve__cell:nth-of-type(2) {
@@ -643,6 +674,116 @@ button {
     margin-bottom: 0px;
   }
 }
+@media only screen and (max-width: 605px) {
+  .achieve {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+  }
+  .achieve__big-txt {
+    font-size: 3rem;
+  }
+  .achieve__text {
+    font-size: 1rem;
+    font-weight: bold;
+    width: 320px;
+    text-wrap: balance;
+  }
+}
+.car-slide {
+  max-width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+.car-slide__wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80vw;
+  gap: 15px;
+}
+.car-slide__wrap {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 32%;
+  min-height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.car-slide__img {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  z-index: -1;
+  top: 3%;
+}
+.car-slide__text {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  position: relative;
+  text-align: center;
+  text-wrap-style: balance;
+  width: 75%;
+}
+.car-slide__text::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 110%;
+  height: 55px;
+  background-color: #DB3138;
+  z-index: -1;
+  top: -40%;
+  left: -5%;
+}
+
+.slider__arrow-box {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #DB3138;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider__arrow {
+  color: #fff;
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+  font-size: 2rem;
+}
+
 body {
   font-family: "Grotesk";
   font-weight: bold;

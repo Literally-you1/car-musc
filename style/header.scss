@@ -36,11 +36,23 @@
         color: $main-text;
     }
 }
+.hide{
+    display: none;
+}
 
 @media only screen and (max-width:850px) {
-    .head__burger{
-display: none;
-
+    .head__nav-list{
+        display: none;
     }
-
+    .hide{
+        display: block;
+    }
+    .head{
+        align-items: flex-end;
+        justify-content: center;
+        gap: 20px;
+    }
+    .head__link{
+        font-size: 1.8rem;
+    }
 }

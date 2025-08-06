@@ -95,3 +95,25 @@ margin-bottom: 25px;
     width: 200px;
 }
 }
+
+@media only screen and (max-width:600px) {
+    .contents{
+        margin-top: 60px;
+    }
+.contents__main-text{
+    font-size: 6rem;
+}
+.contents__text{
+    font-size: 1.8rem;
+}
+}
+@media only screen and (max-width:500px) {
+.info-bar__text{
+    width: 100px;
+    font-size: 0.9rem;
+}
+.info-bar__text-vrap{
+    font-size: 0.9rem;
+}
+
+}
