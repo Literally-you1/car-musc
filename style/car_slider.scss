@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    margin: 0 auto 180px auto;
     &__wraper{
     display: flex;
     flex-wrap: wrap;
@@ -33,11 +33,11 @@
     &__text{
         color: $main-text;
         font-weight: bold;
-        font-size: 1.1rem;
+        font-size: 1.4rem;
         position: relative;
         text-align: center;
         text-wrap-style:balance;
-        width: 75%;
+        width: 70%;
         &::after{
             content: "";
             position: absolute;
@@ -46,8 +46,39 @@
             height: 55px;
             background-color: $main-acent;
             z-index: -1;
-            top: -40%;
+            top: -20%;
             left: -5%;
         }
     }
 }
+@media only screen and (max-width:1542px) {
+    .car-slide__text{
+        font-size: 1.1rem;
+           &::after{
+                top: -40%;
+             }
+    }
+}
+@media only screen and (max-width:1050px) {
+    .car-slide{
+        max-width: 97vw;
+        &__wrap{
+            width: 250px;
+        }
+        &__text{
+             width: 75%;
+        }
+    }
+}
+@media only screen and (max-width:975px) {
+    .car-slide__box{
+        visibility: hidden;
+    }
+     .car-slide__wrap{
+            width: 280px;
+        }
+        .car-slide__wraper{
+                width: 85vw;
+        }
+}
+    
